@@ -9,24 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-<div class="top-line">
-    <img class="logo" src="./source/logo.png" alt="logo">
+    <div class="container">
+        <div class="top-line">
+            <img class="logo" src="./source/logo.png" alt="logo">
 
-    <div class="converter"><h1>Przelicznik walut</h1></div>
-</div>
-<div class="bottom-line">
-    <form>
-        <input type="number">
-        <select name="currencies">
-            <option value="1">Test1</option>
-            <option value="2">Test2</option>
-            <option value="3">Test3</option>
-            <option value="4">Test4</option>
-        </select>
-        <input type="submit" value="Przelicz">
-        <span class="text">TO<span>
-        <span class="result">440 PLN</span>
-    </form>
-</div>    
+            <div class="converter-header"><h1>Przelicznik walut</h1></div>
+        </div>
+        <div class="bottom-line">
+            <form class="converter-form">
+                <input type="number" class="input-field" name="input">
+                <select name="currencyCode" class="currencies">
+                </select>
+                <input type="submit" value="Przelicz" class="button">
+                <span class="text">TO<span>
+                <span class="result"> PLN</span>
+            </form>
+        </div>
+    </div>
+<script src="./js/index.js"></script>
 </body>
 </html>
